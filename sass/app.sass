@@ -204,11 +204,12 @@ fieldset .input
 footer
   height: 275px
   background-color: #D4F2F5
-  font-size: 14px
+  font-size: 1em
   text-align: center
   letter-spacing: 0.08em
   font-weight: 500
   padding: 0 20px
+  width: 100%
   input
     text-align: center
   .submit
@@ -224,6 +225,9 @@ footer
     &:hover
       background-color: #47545D
       color: #fff
+  @media screen and (max-width: $break-small)
+    padding: 0
+
 
 .social
   padding: 45px
@@ -236,6 +240,7 @@ footer
 .copyright
   color: #47545D
   border-top: 2px solid #44545E
+  padding: 1.25em
 
 .name
   color: #F15B31
