@@ -2,6 +2,9 @@
 $fontMain: "Relaway"
 $fontPara: "Lato"
 
+//media queries
+$information-phone: "only screen and (max-width : 320px)"
+
 // styles
 
 *
@@ -22,8 +25,8 @@ body
   margin: 0 20px
   // display: flex
   // flex-direction: column
-  // @media screen and (max-width: $break-small)
-  // width: 100%
+  @media #{$information-phone} {
+    width: 100%
   //
   //
   // @media screen and (min-width: $break-large)

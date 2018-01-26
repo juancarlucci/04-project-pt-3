@@ -1,185 +1,49 @@
-* {
-  box-sizing: border-box; }
+/*
+Error: Invalid CSS after "...rmation-phone} ": expected media query list, was "{"
+        on line 28 of /Users/Padum/Documents/Personal/ComputerProgrammingJC/GeneralAssembly/wdi/projects/04-project/04-project-pt-3/sass/app.sass
 
-body {
-  color: #47545D;
-  margin: auto;
-  font-family: "Relaway";
-  font-weight: bold;
-  width: 100%;
-  margin: 0 20px; }
+23:   // grid-template-rows: 50px 350px auto 200px
+24:   // grid-template-areas: "nav nav" "header header" "column-one column-two" "footer footer"
+25:   margin: 0 20px
+26:   // display: flex
+27:   // flex-direction: column
+28:   @media #{$information-phone} {
+29:     width: 100%
+30:   //
+31:   //
+32:   // @media screen and (min-width: $break-large)
+33: 
 
-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  background-color: white;
-  z-index: 100;
-  background-color: #fff;
-  text-align: center;
-  padding: 20px 275px;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly; }
-
-a {
-  font-family: "Roboto", sans-serif;
-  text-decoration: none;
-  color: #899ead;
-  letter-spacing: 1px;
-  font-weight: 600;
-  font-size: 18px;
-  margin: 0 20px;
-  border-bottom: 2px solid transparent; }
-  a:hover {
-    border-color: #899ead; }
-
-h1 {
-  font-family: "Roboto", sans-serif;
-  color: #fff;
-  text-transform: uppercase;
-  letter-spacing: 15px;
-  font-weight: 800;
-  font-size: 35px; }
-
-#site-header {
-  height: 271px;
-  color: #ffffff;
-  /* https://stackoverflow.com/questions/42450098/positioning-text-over-image-html-css */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-image: url("../images/blog_header_bg.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  padding: 30px 20px;
-  width: 100%; }
-
-h2,
-h3 {
-  font-family: "Roboto", sans-serif;
-  color: #0d2c40;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-weight: 700;
-  font-size: 20px; }
-
-#blog-entries {
-  width: 100%; }
-
-p {
-  color: #0d2c40;
-  font-family: "Roboto", serif;
-  font-size: 13px;
-  font-weight: 300;
-  line-height: 26px; }
-
-main {
-  width: 100%;
-  margin: 58px; }
-
-.flex {
-  display: flex; }
-
-#column-one {
-  width: 55%;
-  margin-right: 2em; }
-
-#column-two {
-  width: 21%;
-  margin-top: 70px;
-  color: #888; }
-
-#blogDate {
-  letter-spacing: 3px;
-  font-style: italic;
-  order: 2; }
-
-.about img {
-  padding: 40px 0px; }
-
-img {
-  max-width: 100%; }
-
-.recentIssues a {
-  font-family: "Roboto", sans-serif;
-  text-decoration: none;
-  letter-spacing: 1px;
-  font-weight: 600;
-  font-size: 18px;
-  margin: 0 20px;
-  border-bottom: 2px solid transparent; }
-
-fieldset {
-  text-align: left;
-  border: none;
-  margin-bottom: 6em; }
-
-fieldset h2 {
-  text-align: center; }
-
-fieldset .input {
-  width: 100%;
-  height: 5em; }
-
-#user_name,
-#user_email {
-  width: 49%;
-  height: 5em;
-  border-radius: 4px;
-  display: inline-block; }
-
-#user_comment {
-  height: 15em; }
-
-.input {
-  margin: 1em 0 1em;
-  border: 1px solid gray; }
-
-.submit {
-  width: 100%;
-  text-align: left; }
-
-footer {
-  height: 275px;
-  background-color: #D4F2F5;
-  font-size: 14px;
-  text-align: center;
-  letter-spacing: 0.08em;
-  font-weight: 500;
-  padding: 0 20px; }
-  footer input {
-    text-align: center; }
-  footer .submit {
-    background-color: #D4F2F5;
-    text-align: center;
-    text-transform: uppercase;
-    border: 1px solid gray;
-    width: 14em;
-    height: 3em;
-    margin: 2em;
-    transition: all 1s;
-    -webkit-transition: all 1s; }
-    footer .submit:hover {
-      background-color: #47545D;
-      color: #fff; }
-
-.social {
-  padding: 45px; }
-
-#user_email2 {
-  text-transform: uppercase;
-  height: 3em;
-  width: 27em; }
-
-.copyright {
-  color: #47545D;
-  border-top: 2px solid #44545E; }
-
-.name {
-  color: #F15B31;
-  font-weight: 700; }
-
-/*# sourceMappingURL=app.css.map */
+Backtrace:
+/Users/Padum/Documents/Personal/ComputerProgrammingJC/GeneralAssembly/wdi/projects/04-project/04-project-pt-3/sass/app.sass:28
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1278:in `expected'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1208:in `expected'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:74:in `parse_media_query_list'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:921:in `parse_media_directive'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:838:in `parse_directive'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:655:in `parse_line'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:540:in `build_tree'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:559:in `block in append_children'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:558:in `each'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:558:in `append_children'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:549:in `block in build_tree'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:542:in `each'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:542:in `build_tree'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:559:in `block in append_children'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:558:in `each'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:558:in `append_children'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:417:in `_to_tree'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
+/Applications/Koala.app/Contents/Resources/app.nw/bin/sass:22:in `load'
+/Applications/Koala.app/Contents/Resources/app.nw/bin/sass:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"...rmation-phone} \": expected media query list, was \"{\"\A         on line 28 of /Users/Padum/Documents/Personal/ComputerProgrammingJC/GeneralAssembly/wdi/projects/04-project/04-project-pt-3/sass/app.sass\A \A 23:   // grid-template-rows: 50px 350px auto 200px\A 24:   // grid-template-areas: \"nav nav\" \"header header\" \"column-one column-two\" \"footer footer\"\A 25:   margin: 0 20px\A 26:   // display: flex\A 27:   // flex-direction: column\A 28:   @media #{$information-phone} {\A 29:     width: 100%\A 30:   //\A 31:   //\A 32:   // @media screen and (min-width: $break-large)\A 33: "; }
