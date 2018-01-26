@@ -4,6 +4,7 @@ $fontPara: "Lato"
 
 //media queries
 $information-phone: "only screen and (max-width : 320px)"
+$break-small: 320px
 
 // styles
 
@@ -25,7 +26,7 @@ body
   margin: 0 20px
   // display: flex
   // flex-direction: column
-  @media #{$information-phone} {
+  @media screen and (max-width: $break-small)
     width: 100%
   //
   //
@@ -48,6 +49,8 @@ nav
   display: flex
   align-items: center
   justify-content: space-evenly
+  @media screen and (max-width: $break-small)
+    display: none
 
 a
   font-family: "Roboto", sans-serif
