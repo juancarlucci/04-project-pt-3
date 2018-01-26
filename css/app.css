@@ -8,9 +8,17 @@ body {
   font-weight: bold;
   width: 100%;
   margin: 0 20px; }
-  @media screen and (max-width: 320px) {
-    body {
-      width: 100%; } }
+
+.hamburger {
+  display: none; }
+  @media screen and (max-width: 420px) {
+    .hamburger {
+      display: block;
+      color: #fff;
+      font-size: 1.7rem;
+      position: absolute;
+      top: 1em;
+      left: 1.3em; } }
 
 nav {
   position: fixed;
@@ -24,8 +32,10 @@ nav {
   padding: 20px 275px;
   display: flex;
   align-items: center;
-  justify-content: space-evenly; }
-  @media screen and (max-width: 320px) {
+  justify-content: space-evenly;
+  transition: all 2s;
+  -webkit-transition: all 2s; }
+  @media screen and (max-width: 420px) {
     nav {
       display: none; } }
 
@@ -92,11 +102,17 @@ main {
 #column-one {
   width: 55%;
   margin-right: 2em; }
+  @media screen and (max-width: 420px) {
+    #column-one {
+      width: 100%; } }
 
 #column-two {
   width: 21%;
   margin-top: 70px;
   color: #888; }
+  @media screen and (max-width: 420px) {
+    #column-two {
+      display: none; } }
 
 #blogDate {
   letter-spacing: 3px;
