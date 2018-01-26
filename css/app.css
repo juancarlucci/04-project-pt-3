@@ -3,11 +3,10 @@
 
 body {
   color: #47545D;
-  margin: auto;
+  margin: 0;
   font-family: "Relaway";
   font-weight: bold;
-  width: 100%;
-  margin: 0 20px; }
+  width: 100%; }
 
 .hamburger {
   display: none; }
@@ -150,8 +149,15 @@ fieldset .input {
 #user_email {
   width: 49%;
   height: 5em;
-  border-radius: 4px;
   display: inline-block; }
+  @media screen and (max-width: 420px) {
+    #user_name,
+    #user_email {
+      display: block;
+      width: 100%; } }
+
+#user_email {
+  float: right; }
 
 #user_comment {
   height: 15em; }

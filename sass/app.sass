@@ -3,6 +3,7 @@ $fontMain: "Relaway"
 $fontPara: "Lato"
 
 //media queries
+//http://thesassway.com/intermediate/responsive-web-design-in-sass-using-media-queries-in-sass-32
 $information-phone: "only screen and (max-width : 320px)"
 $break-small: 420px
 
@@ -14,7 +15,7 @@ $break-small: 420px
 
 body
   color: #47545D
-  margin: auto
+  margin: 0
   // display: grid
   // grid-gap: 0.5em
   font-family: $fontMain
@@ -23,7 +24,7 @@ body
   // grid-template-columns: 1fr 1fr
   // grid-template-rows: 50px 350px auto 200px
   // grid-template-areas: "nav nav" "header header" "column-one column-two" "footer footer"
-  margin: 0 20px
+
 
 
 .hamburger
@@ -181,8 +182,13 @@ fieldset .input
 #user_email
   width: 49%
   height: 5em
-  border-radius: 4px
   display: inline-block
+  @media screen and (max-width: $break-small)
+    display: block
+    width: 100%
+
+#user_email
+  float: right
 
 #user_comment
   height: 15em
