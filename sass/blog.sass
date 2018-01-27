@@ -4,8 +4,8 @@ $fontPara: "Lato"
 
 //media queries
 //http://thesassway.com/intermediate/responsive-web-design-in-sass-using-media-queries-in-sass-32
-$information-phone: "only screen and (max-width : 320px)"
-$break-small: 420px
+$information-phone: "only screen and (max-width : 20.000em)"
+$break-small: 26.250em
 
 // styles
 
@@ -16,15 +16,7 @@ $break-small: 420px
 body
   color: #47545D
   margin: 0
-  // display: grid
-  // grid-gap: 0.5em
-  font-family: $fontMain
-  font-weight: bold
   width: 100%
-  // grid-template-columns: 1fr 1fr
-  // grid-template-rows: 50px 350px auto 200px
-  // grid-template-areas: "nav nav" "header header" "column-one column-two" "footer footer"
-
 
 
 .hamburger
@@ -42,42 +34,41 @@ nav
   top: 0
   left: 0
   right: 0
-  background-color: white
-  z-index: 100
-  // top: 0px
   background-color: #fff
   text-align: center
-  padding: 20px 275px
+  padding: 1.250em 17.188em
   display: flex
   align-items: center
   justify-content: space-evenly
-  transition: all 2s
-  -webkit-transition: all 2s
   @media screen and (max-width: $break-small)
     display: none
 
+
 a
-  font-family: "Roboto", sans-serif
+  font-family: $fontMain, sans-serif
+  font-weight: 600
   text-decoration: none
   color: #899ead
-  letter-spacing: 1px
-  font-weight: 600
-  font-size: 18px
-  margin: 0 20px
-  border-bottom: 2px solid transparent
+  letter-spacing: 0.063em
+  font-size: 1.125em
+  margin: 0 1.250em
+  border-bottom: 0.125em solid transparent
   &:hover
     border-color: #899ead
 
 h1
-  font-family: "Roboto", sans-serif
+  font-family: $fontMain, sans-serif
+  font-weight: 600
   color: #fff
   text-transform: uppercase
-  letter-spacing: 15px
-  font-weight: 800
-  font-size: 35px
+  letter-spacing: 0.938em
+  font-size: 2.188em
+  @media screen and (max-width: $break-small)
+    font-size: 1.875em
+    letter-spacing: .6em
 
 #site-header
-  height: 271px
+  height: 16.938em
   color: #ffffff
   /* https://stackoverflow.com/questions/42450098/positioning-text-over-image-html-css
   display: flex
@@ -87,33 +78,40 @@ h1
   background-repeat: no-repeat
   background-size: cover
   background-position: center
-  padding: 30px 20px
+  // padding: 1.875em 1.250em
   width: 100%
+
 
 
 h2,
 h3
-  font-family: "Roboto", sans-serif
+  font-family: $fontMain, sans-serif
+  font-weight: 600
   color: #0d2c40
   text-transform: uppercase
-  letter-spacing: 1px
+  letter-spacing: 0.063em
   font-weight: 700
-  font-size: 20px
+  font-size: 1.5em
 
 #blog-entries
   width: 100%
+  @media screen and (max-width: $break-small)
+    // width: 91%
 
 
 p
   color: #0d2c40
-  font-family: "Roboto", serif
-  font-size: 13px
+  font-family: $fontPara, serif
+  font-weight: 400
+  font-size: .85em
   font-weight: 300
-  line-height: 26px
+  line-height: 2em
 
 main
   width: 100%
-  margin: 58px
+  margin: 5em
+  @media screen and (max-width: $break-small)
+    margin: 2em
 
 
 .wrapper
@@ -129,7 +127,7 @@ main
 
 #column-one
   width: 55%
-  margin-right: 2em
+  margin-right: 3em
   // order: 1
   // flex: 2
   @media screen and (max-width: $break-small)
@@ -137,33 +135,35 @@ main
 
 #column-two
   width: 21%
-  margin-top: 70px
+  // flex: 1
+  margin-top: 4.375em
   color: #888
   // order: 2
   // flex: 1
   @media screen and (max-width: $break-small)
     display: none
 
-
 #blogDate
-  letter-spacing: 3px
+  letter-spacing: 0.188em
   font-style: italic
   order: 2
 
 .about img
-  padding: 40px 0px
+  padding: 2.500em 0
+
 
 img
   max-width: 100%
 
 .recentIssues a
-  font-family: "Roboto", sans-serif
+  font-family: $fontPara, sans-serif
+  font-weight: 400
   text-decoration: none
-  letter-spacing: 1px
+  letter-spacing: 0.063em
   font-weight: 600
-  font-size: 18px
-  margin: 0 20px
-  border-bottom: 2px solid transparent
+  font-size: .7em
+  margin: 0 1.250em
+  border-bottom: 0.125em solid transparent
 
 fieldset
   text-align: left
@@ -176,7 +176,7 @@ fieldset h2
 fieldset .input
   width: 100%
   height: 5em
-  // border-radius: 4px
+
 
 #user_name,
 #user_email
@@ -195,20 +195,21 @@ fieldset .input
 
 .input
   margin: 1em 0 1em
-  border: 1px solid gray
+  border: 0.063em solid gray
 
 .submit
   width: 100%
   text-align: left
 
 footer
-  height: 275px
   background-color: #D4F2F5
+  font-family: $fontMain, sans-serif
+  font-weight: 600
   font-size: 1em
   text-align: center
   letter-spacing: 0.08em
   font-weight: 500
-  padding: 0 20px
+  padding: 0 1.250em
   width: 100%
   input
     text-align: center
@@ -216,7 +217,7 @@ footer
     background-color: #D4F2F5
     text-align: center
     text-transform: uppercase
-    border: 1px solid gray
+    border: 0.063em solid gray
     width: 14em
     height: 3em
     margin: 2em
@@ -230,7 +231,9 @@ footer
 
 
 .social
-  padding: 45px
+  padding: 2.813em
+  i
+    padding: .2em
 
 #user_email2
   text-transform: uppercase
@@ -238,8 +241,10 @@ footer
   width: 27em
 
 .copyright
+  font-family: $fontPara
+  font-weight: 400
   color: #47545D
-  border-top: 2px solid #44545E
+  border-top: 0.125em solid #44545E
   padding: 1.25em
 
 .name

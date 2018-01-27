@@ -4,13 +4,11 @@
 body {
   color: #47545D;
   margin: 0;
-  font-family: "Relaway";
-  font-weight: bold;
   width: 100%; }
 
 .hamburger {
   display: none; }
-  @media screen and (max-width: 420px) {
+  @media screen and (max-width: 26.25em) {
     .hamburger {
       display: block;
       color: #fff;
@@ -24,42 +22,42 @@ nav {
   top: 0;
   left: 0;
   right: 0;
-  background-color: white;
-  z-index: 100;
   background-color: #fff;
   text-align: center;
-  padding: 20px 275px;
+  padding: 1.25em 17.188em;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
-  transition: all 2s;
-  -webkit-transition: all 2s; }
-  @media screen and (max-width: 420px) {
+  justify-content: space-evenly; }
+  @media screen and (max-width: 26.25em) {
     nav {
       display: none; } }
 
 a {
-  font-family: "Roboto", sans-serif;
+  font-family: "Relaway", sans-serif;
+  font-weight: 600;
   text-decoration: none;
   color: #899ead;
-  letter-spacing: 1px;
-  font-weight: 600;
-  font-size: 18px;
-  margin: 0 20px;
-  border-bottom: 2px solid transparent; }
+  letter-spacing: 0.063em;
+  font-size: 1.125em;
+  margin: 0 1.25em;
+  border-bottom: 0.125em solid transparent; }
   a:hover {
     border-color: #899ead; }
 
 h1 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Relaway", sans-serif;
+  font-weight: 600;
   color: #fff;
   text-transform: uppercase;
-  letter-spacing: 15px;
-  font-weight: 800;
-  font-size: 35px; }
+  letter-spacing: 0.938em;
+  font-size: 2.188em; }
+  @media screen and (max-width: 26.25em) {
+    h1 {
+      font-size: 1.875em;
+      letter-spacing: 0.6em; } }
 
 #site-header {
-  height: 271px;
+  height: 16.938em;
   color: #ffffff;
   /* https://stackoverflow.com/questions/42450098/positioning-text-over-image-html-css */
   display: flex;
@@ -69,69 +67,74 @@ h1 {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding: 30px 20px;
   width: 100%; }
 
 h2,
 h3 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Relaway", sans-serif;
+  font-weight: 600;
   color: #0d2c40;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 0.063em;
   font-weight: 700;
-  font-size: 20px; }
+  font-size: 1.5em; }
 
 #blog-entries {
   width: 100%; }
 
 p {
   color: #0d2c40;
-  font-family: "Roboto", serif;
-  font-size: 13px;
+  font-family: "Lato", serif;
+  font-weight: 400;
+  font-size: 0.85em;
   font-weight: 300;
-  line-height: 26px; }
+  line-height: 2em; }
 
 main {
   width: 100%;
-  margin: 58px; }
+  margin: 5em; }
+  @media screen and (max-width: 26.25em) {
+    main {
+      margin: 2em; } }
 
 .flex {
   display: flex; }
 
 #column-one {
   width: 55%;
-  margin-right: 2em; }
-  @media screen and (max-width: 420px) {
+  margin-right: 3em; }
+  @media screen and (max-width: 26.25em) {
     #column-one {
       width: 100%; } }
 
 #column-two {
   width: 21%;
-  margin-top: 70px;
+  margin-top: 4.375em;
   color: #888; }
-  @media screen and (max-width: 420px) {
+  @media screen and (max-width: 26.25em) {
     #column-two {
       display: none; } }
 
 #blogDate {
-  letter-spacing: 3px;
+  letter-spacing: 0.188em;
   font-style: italic;
   order: 2; }
 
 .about img {
-  padding: 40px 0px; }
+  padding: 2.5em 0; }
 
 img {
   max-width: 100%; }
 
 .recentIssues a {
-  font-family: "Roboto", sans-serif;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
   text-decoration: none;
-  letter-spacing: 1px;
+  letter-spacing: 0.063em;
   font-weight: 600;
-  font-size: 18px;
-  margin: 0 20px;
-  border-bottom: 2px solid transparent; }
+  font-size: 0.7em;
+  margin: 0 1.25em;
+  border-bottom: 0.125em solid transparent; }
 
 fieldset {
   text-align: left;
@@ -150,7 +153,7 @@ fieldset .input {
   width: 49%;
   height: 5em;
   display: inline-block; }
-  @media screen and (max-width: 420px) {
+  @media screen and (max-width: 26.25em) {
     #user_name,
     #user_email {
       display: block;
@@ -164,20 +167,21 @@ fieldset .input {
 
 .input {
   margin: 1em 0 1em;
-  border: 1px solid gray; }
+  border: 0.063em solid gray; }
 
 .submit {
   width: 100%;
   text-align: left; }
 
 footer {
-  height: 275px;
   background-color: #D4F2F5;
+  font-family: "Relaway", sans-serif;
+  font-weight: 600;
   font-size: 1em;
   text-align: center;
   letter-spacing: 0.08em;
   font-weight: 500;
-  padding: 0 20px;
+  padding: 0 1.25em;
   width: 100%; }
   footer input {
     text-align: center; }
@@ -185,7 +189,7 @@ footer {
     background-color: #D4F2F5;
     text-align: center;
     text-transform: uppercase;
-    border: 1px solid gray;
+    border: 0.063em solid gray;
     width: 14em;
     height: 3em;
     margin: 2em;
@@ -194,12 +198,14 @@ footer {
     footer .submit:hover {
       background-color: #47545D;
       color: #fff; }
-  @media screen and (max-width: 420px) {
+  @media screen and (max-width: 26.25em) {
     footer {
       padding: 0; } }
 
 .social {
-  padding: 45px; }
+  padding: 2.813em; }
+  .social i {
+    padding: 0.2em; }
 
 #user_email2 {
   text-transform: uppercase;
@@ -207,8 +213,10 @@ footer {
   width: 27em; }
 
 .copyright {
+  font-family: "Lato";
+  font-weight: 400;
   color: #47545D;
-  border-top: 2px solid #44545E;
+  border-top: 0.125em solid #44545E;
   padding: 1.25em; }
 
 .name {
