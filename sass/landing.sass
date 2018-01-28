@@ -71,24 +71,35 @@ h1
   a
     color: #fff
 
-.column-wraper
+.flex
   display: flex
   flex-flow: row wrap
 
+.archive
+  // max-width: 68.750em
+  // width: 100%
+
+.archive h2
+  text-align: center
+  margin: 6em 0 3em
+
 .card
-  margin: 0px 0.7em 0 .7em
+  // margin: 0px 0.7em 0 .7em
   height: 53em
-  width: 25em
-  flex: 1
+  width: 22.500em
+  flex: 1 1 22.500em
   text-align: center
   img
-    max-width: 22.688em
-    max-height: 22.688em
+    max-width: 22em
+    max-height: 22em
+  h3
+    text-align: center
   p
-    padding: 0em 1em 2em 1em
+    // padding: 0em 1em 2em 1em
+    text-align: center
     overflow: hidden
-    height: 18em
-    width: 25em
+    height: 12em
+    max-width: 22em
     ::after
       content: "..."
   button
@@ -97,13 +108,18 @@ h1
     text-transform: uppercase
     border: 0.063em solid gray
 
-.archive h2
-  text-align: center
-  margin: 6em 0 3em
-
-
 .about
-  height: 36.313em
+  // height: 36.313em
   background-color: #D4F2F5
   padding: 7.500em
   text-align: center
+
+.gallery
+  h2
+    text-align: center
+    margin: 6em 0 3em
+  h3
+    text-align: center
+    margin: 0 0 3em
+  img
+    padding: .3em
