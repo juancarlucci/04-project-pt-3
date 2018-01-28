@@ -56,9 +56,10 @@ h1 {
       font-size: 1.875em;
       letter-spacing: 0.6em; } }
 
-#site-header {
+#blog-header {
   height: 16.938em;
-  color: #ffffff;
+  width: 100%;
+  color: #9C27B0;
   /* https://stackoverflow.com/questions/42450098/positioning-text-over-image-html-css */
   display: flex;
   align-items: center;
@@ -66,8 +67,7 @@ h1 {
   background-image: url("../images/blog_header_bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
-  width: 100%; }
+  background-position: center; }
 
 h2,
 h3 {
@@ -223,4 +223,4 @@ footer {
   color: #F15B31;
   font-weight: 700; }
 
-/*# sourceMappingURL=app.css.map */
+/*# sourceMappingURL=blog.css.map */

@@ -1,0 +1,104 @@
+// variables
+$fontMain: "Relaway"
+$fontPara: "Lato"
+
+//media queries
+//http://thesassway.com/intermediate/responsive-web-design-in-sass-using-media-queries-in-sass-32
+$information-phone: "only screen and (max-width : 20.000em)"
+$break-small: 26.250em
+
+*
+  box-sizing: border-box
+
+.hamburger
+  display: none
+  @media screen and (max-width: $break-small)
+      display: block
+      color: #fff
+      font-size: 1.7rem
+      position: absolute
+      top: 1em
+      left: 1.3em
+
+nav
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  background-color: #fff
+  text-align: center
+  padding: 1.250em 17.188em
+  display: flex
+  align-items: center
+  justify-content: space-evenly
+  @media screen and (max-width: $break-small)
+    display: none
+
+a
+  font-family: $fontMain, sans-serif
+  font-weight: 600
+  text-decoration: none
+  color: #899ead
+  letter-spacing: 0.063em
+  font-size: 1.125em
+  margin: 0 1.250em
+  border-bottom: 0.125em solid transparent
+  &:hover
+    border-color: #899ead
+
+
+h1
+  font-family: $fontMain, sans-serif
+  font-weight: 600
+  color: #0d2c40
+  text-transform: uppercase
+  letter-spacing: 0.938em
+  font-size: 2.188em
+  @media screen and (max-width: $break-small)
+    font-size: 1.875em
+    letter-spacing: .6em
+
+#landing-header
+  height: 100em
+  background-image: url("../images/home_header_bg.jpg")
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center
+  background-attachment: fixed
+  width: 100%
+  h1,
+  h2,
+  a
+    color: #fff
+
+.column-wraper
+  display: flex
+  flex-flow: row wrap
+
+.card
+  height: 48em
+  width: 25em
+  flex: 1
+  text-align: center
+  p
+    padding: 0em 1em 2em 1em
+    overflow: hidden
+    height: 18em
+    width: 25em
+    ::after
+      content: "..."
+  button
+    background-color: #fff
+    text-align: center
+    text-transform: uppercase
+    border: 0.063em solid gray
+
+.archive h2
+  text-align: center
+  margin: 6em 0 3em
+
+.about
+  height: 40em
+  background-color: #D4F2F5
+  padding: 13.250em
+  text-align: center
