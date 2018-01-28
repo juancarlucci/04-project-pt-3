@@ -18,9 +18,9 @@
 <body>
   <a class="hamburger" href=""><i class="fa fa-bars"></i></a>
   <nav>
-    <a href="#">About</a>
-    <a href="#">Gallery</a>
-    <a href="#">Blog</a>
+    <a href="#about">About</a>
+    <a href="#gallery">Gallery</a>
+    <a href="blog.html">Blog</a>
     <a href="#">Contact</a>
   </nav>
   <header class="vertically-centered" id="landing-header">
@@ -66,7 +66,7 @@
     </div> <!-- flex -->
   </section>
 
-  <section class="about">
+  <section id="about" class="about">
 
     <h2>About The Magazine</h2>
 
@@ -77,7 +77,7 @@
 
   </section>
 
-  <section class="gallery">
+  <section id="gallery" class="gallery">
 
 
       <h2>Issue Twenty</h2>
@@ -94,6 +94,29 @@
       <img src="images/gallery_6.jpg" alt="">
     </div>
   </section>
+
+  <fieldset>
+    <h2>Get in touch</h2>
+    <input class="input name" id="user_name" placeholder="NAME" type="text">
+    <input class="input email" id="user_email" placeholder="EMAIL" type="text">
+    <input class="input comment" id="user_comment" placeholder="MESSAGE" type="text">
+    <input class="input submit" type="submit" value="SUBMIT">
+  </fieldset>
+
+  <footer>
+    <div class="social">
+      <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
+      <i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
+      <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+   </div>
+   <input class="input name" id="user_email2" placeholder="email address" type="text">
+   <input class="input submit" type="submit" value="Keep In Touch">
+
+    <section class="lineCopyRight">
+      <p class="copyright">&#169; 2016 Sarah Holden</p>
+    </section>
+
+  </footer>
 
 </body>
 
