@@ -1,21 +1,27 @@
 * {
-  box-sizing: border-box; }
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
 
 body {
   color: #47545D;
   margin: 0;
-  width: 100%; }
+  width: 100%;
+}
 
 .hamburger {
-  display: none; }
-  @media screen and (max-width: 26.25em) {
-    .hamburger {
-      display: block;
-      color: #fff;
-      font-size: 1.7rem;
-      position: absolute;
-      top: 1em;
-      left: 1.3em; } }
+  display: none;
+}
+@media screen and (max-width: 26.25em) {
+  .hamburger {
+    display: block;
+    color: #fff;
+    font-size: 1.7rem;
+    position: absolute;
+    top: 1em;
+    left: 1.3em;
+  }
+}
 
 nav {
   position: fixed;
@@ -25,12 +31,21 @@ nav {
   background-color: #fff;
   text-align: center;
   padding: 1.25em 17.188em;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-evenly; }
-  @media screen and (max-width: 26.25em) {
-    nav {
-      display: none; } }
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+@media screen and (max-width: 26.25em) {
+  nav {
+    display: none;
+  }
+}
 
 a {
   font-family: "Relaway", sans-serif;
@@ -40,9 +55,11 @@ a {
   letter-spacing: 0.063em;
   font-size: 1.125em;
   margin: 0 1.25em;
-  border-bottom: 0.125em solid transparent; }
-  a:hover {
-    border-color: #899ead; }
+  border-bottom: 0.125em solid transparent;
+}
+a:hover {
+  border-color: #899ead;
+}
 
 h1 {
   font-family: "Relaway", sans-serif;
@@ -50,24 +67,34 @@ h1 {
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 0.938em;
-  font-size: 2.188em; }
-  @media screen and (max-width: 26.25em) {
-    h1 {
-      font-size: 1.875em;
-      letter-spacing: 0.6em; } }
+  font-size: 2.188em;
+}
+@media screen and (max-width: 26.25em) {
+  h1 {
+    font-size: 1.875em;
+    letter-spacing: 0.6em;
+  }
+}
 
 #blog-header {
   height: 16.938em;
   width: 100%;
   color: #9C27B0;
   /* https://stackoverflow.com/questions/42450098/positioning-text-over-image-html-css */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-image: url("../images/blog_header_bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center; }
+  background-position: center;
+}
 
 h2,
 h3 {
@@ -77,10 +104,12 @@ h3 {
   text-transform: uppercase;
   letter-spacing: 0.063em;
   font-weight: 700;
-  font-size: 1.5em; }
+  font-size: 1.5em;
+}
 
 #blog-entries {
-  width: 100%; }
+  width: 100%;
+}
 
 p {
   color: #0d2c40;
@@ -88,43 +117,61 @@ p {
   font-weight: 400;
   font-size: 0.85em;
   font-weight: 300;
-  line-height: 2em; }
+  line-height: 2em;
+}
 
 main {
   width: 100%;
-  margin: 5em; }
-  @media screen and (max-width: 26.25em) {
-    main {
-      margin: 2em; } }
+  margin: 5em;
+}
+@media screen and (max-width: 26.25em) {
+  main {
+    margin: 2em;
+  }
+}
 
 .flex {
-  display: flex; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 
 #column-one {
   width: 55%;
-  margin-right: 3em; }
-  @media screen and (max-width: 26.25em) {
-    #column-one {
-      width: 100%; } }
+  margin-right: 3em;
+}
+@media screen and (max-width: 26.25em) {
+  #column-one {
+    width: 100%;
+  }
+}
 
 #column-two {
   width: 21%;
   margin-top: 4.375em;
-  color: #888; }
-  @media screen and (max-width: 26.25em) {
-    #column-two {
-      display: none; } }
+  color: #888;
+}
+@media screen and (max-width: 26.25em) {
+  #column-two {
+    display: none;
+  }
+}
 
 #blogDate {
   letter-spacing: 0.188em;
   font-style: italic;
-  order: 2; }
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
 
 .about img {
-  padding: 2.5em 0; }
+  padding: 2.5em 0;
+}
 
 img {
-  max-width: 100%; }
+  max-width: 100%;
+}
 
 .recentIssues a {
   font-family: "Lato", sans-serif;
@@ -134,6 +181,5 @@ img {
   font-weight: 600;
   font-size: 0.7em;
   margin: 0 1.25em;
-  border-bottom: 0.125em solid transparent; }
-
-/*# sourceMappingURL=blog.css.map */
+  border-bottom: 0.125em solid transparent;
+}
