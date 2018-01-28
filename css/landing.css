@@ -94,11 +94,17 @@ h1 {
     text-align: center;
     text-transform: uppercase;
     border: 0.063em solid gray; }
+  @media screen and (max-width: 26.25em) {
+    .card {
+      height: 44em; } }
 
 .about {
   background-color: #D4F2F5;
   padding: 7.5em;
   text-align: center; }
+  @media screen and (max-width: 26.25em) {
+    .about {
+      padding: 7.5em 0.5em; } }
 
 .gallery h2 {
   text-align: center;
