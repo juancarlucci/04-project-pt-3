@@ -113,9 +113,11 @@ h1 {
   text-align: center;
   margin: 0 0 3em; }
 .gallery img {
-  padding: 0.3em; }
+  padding: 0.3em;
+  transition: all 1s;
+  -webkit-transition: all 1s; }
   .gallery img:hover {
-    -webkit-filter: grayscale(50%);
-    filter: grayscale(50%); }
+    -webkit-filter: brightness(110%);
+    filter: brightness(110%); }
 
 /*# sourceMappingURL=landing.css.map */
